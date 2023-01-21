@@ -13,6 +13,14 @@
     <link rel='stylesheet' id='bones-stylesheet-css'  href='https://opendata.ch/wp-content/themes/studioyacine/dist/css/main.min.css' type='text/css' media='all' />
 
     <style>
+        .container section p {
+            margin-bottom: 2em;
+        }
+        .container section a {
+            font-weight: bolder;
+            color: blue;
+        }
+
         @keyframes  animation {
             0% {
                 transform: translateX(10rem);
@@ -48,7 +56,7 @@
 <body class="antialiased overflow-x-hidden">
 <div x-data="{open: false}" class="container mx-auto px-6">
     <nav class="flex items-center justify-between py-8 px-4 sm:px-0">
-        <a href="/" aria-label="TailwindTemplates logo" class="w-1/4 text-primary font-bold text-2xl flex items-center space-x-2">
+        <a href="/" aria-label="TailwindTemplates logo" class="w-2/4 text-primary font-bold text-2xl flex items-center space-x-2">
             <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
                 <img src="932382488_mountain_snow_fresh__data_news__journalist__icon__white_background.png" width="100%">
             </div>
@@ -99,19 +107,22 @@
 <div class="container mx-auto px-6">
     <section>
         <div class="lg:w-1/2 mx-auto mt-24 relative">
-        <p style="font-size:150%;line-height:1.5em;margin-bottom:1em">
-            Wir möchten eine <b>Community of Practice</b> innerhalb der staatlichen Verwaltungen, die mit Open Data arbeiten, sowie mit Industriepartnern, Forschungsteams und anderen Stakeholder-Gruppen mit Geschichten und Ressourcen anregen. 
-        </p><p>
-            Als erste "low hanging fruit" haben wir einen Newsfeed erstellt, der die von BFS / opendata.swiss produzierten Datensatz-Publikationen und <a href="https://handbook.opendata.swiss/de/content/kommunizieren/kommunizieren.html" target="_blank">OGD Newsletter</a>, den Blog von <a href="https://opendata.ch/news" target="_blank">Opendata.ch</a> sowie die in unserer Community verbreiteten Webseiten, Pressenberichte und Soziale Medien ergänzt. 
-        </p><p>
-           Unser erster Schwerpunkt ist es, <b>gute Beispiele und auch Fehlversuche</b> in die Veröffentlichung und Anwendung von Open (Government) Data zu beleuchten. Wir hoffen, das Interesse mit einer Website und Crowdfunding zu testen und eine Plattform für nützliche automatische Aggregation, Community-Inhalte und journalistische Arbeit zu schaffen.
+        <p style="font-size:150%;line-height:1.5em">
+            Hallo, Schweiz! Wir sind eine <b>Community of Practice</b> innerhalb der staatlichen Verwaltungen, die mit Open Data arbeiten, sowie mit Industriepartnern, Forschungsteams und anderen Stakeholder-Gruppen mit Geschichten und Ressourcen anregen. 
         </p>
-        <p style="margin-top:1em">
+        <p style="font-size:80%">
             <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Ffeedly.com%2Ff%2FjTacESf6tkUFGU7wrC79PwN8" target="_blank">
         <img src="1032449285_a_person_reading_charts_data_values_numbers_infographic_a_newspaper_in_the_morning_while_drinking_co.jpg" width="100%">
-                 <img src="//d33v4339jhl8k0.cloudfront.net/docs/assets/5abc898d2c7d3a0e9366d6c3/images/60185acc6867724dfc6ee418/logo-feedly-full-color@2x.png" alt="Feedly Knowledge Base" width="400">
+                 <img src="//d33v4339jhl8k0.cloudfront.net/docs/assets/5abc898d2c7d3a0e9366d6c3/images/60185acc6867724dfc6ee418/logo-feedly-full-color@2x.png" alt="Feedly Knowledge Base" width="200">
                  <br>
-            Prototyp</a> erstellt mit Feedly an der <a href="https://www.bfh.ch/de/aktuell/fachveranstaltungen/weiterbildung-data-management-und-open-government-data/" target="_blank">Weiterbildung Data Management und Open Government Data</a> (Bern - 21.1.2023)
+            Prototyp</a> erstellt an der <a href="https://www.bfh.ch/de/aktuell/fachveranstaltungen/weiterbildung-data-management-und-open-government-data/" target="_blank">Weiterbildung Data Management und Open Government Data</a> (Bern - 21.1.2023) mit <a href="https://feedly.com">Feedly</a>, <a href="https://tallstack.dev/">TALL Stack</a> und <a href="https://dreamstudio.ai">DreamStudio</a>.
+        </p>
+        <p>
+            Als erstes "low hanging fruit" haben wir einen Newsfeed erstellt, der die von BFS / opendata.swiss produzierten Datenpublikationen und <a href="https://handbook.opendata.swiss/de/content/kommunizieren/kommunizieren.html" target="_blank">OGD Newsletter</a>, den Blog von <a href="https://opendata.ch/news" target="_blank">Opendata.ch</a> sowie die in unserer Community verbreiteten Webseiten, Pressenberichte und Soziale Medien automatisch ergänzt wird. 
+        </p><p>
+           Unser Schwerpunkt ist es, <b>gute Beispiele und auch Fehlversuche</b> in die Veröffentlichung und Anwendung von Open (Government) Data zu beleuchten. Wir hoffen, das Interesse mit einer Website und Crowdfunding zu testen und eine Plattform für nützliche automatische Aggregation, Community-Inhalte und journalistische Arbeit zu schaffen.
+        </p><p>
+            -- Maik, Thomas, André, Oleg
         </p>
        </div>
     </section>
@@ -201,11 +212,6 @@
 
         <div class="lg:justify-center items-center flex px-6 lg:px-0">
             <center>
-                Built with <a class="hover:text-secondary" href="https://tallstack.dev/" rel="noopener">TALL stack</a> &
-                <icon class="text-lg hover:text-red-500 cursor-default">❤</icon>
-                by <a class="hover:text-secondary" href="https://github.com/loleg" rel="noopener">loleg</a>
-
-                <br>
                 <a class="github-button" href="https://github.com/loleg/fresch-open-data" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star loleg/fresch-open-data on GitHub">Star</a>
 
                 <a href="https://opencollective.com/fresch" target="_blank"><img src="https://next-images.opencollective.com/_next/image?url=%2Fstatic%2Fimages%2Fopencollective-icon.png&w=48&q=75" alt="opencollective logo"></a>
